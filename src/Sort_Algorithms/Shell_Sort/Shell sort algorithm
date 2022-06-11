@@ -1,0 +1,23 @@
+Shell sort algorithm like Insertion sort only that it is called shell sort because
+it wil first run through the array by comparing the element with 3 position element
+and ensure that the first comparison in sorted and with that process we will end up
+disorganizing the arrays and storing the first sorted array at the right position. which kind of
+enhances the new unsorted arrays
+
+Example: 20 35 -15 7 55 1 -22
+         -22 35 -15 7 55 1 20 (-> shell sort)
+         {-> After the the shell sort then the insertion sort is carried out on the new
+          arrangement which is now -22 35 -15 7 55 1 20}
+
+        ANS:
+Shell - Insertion sorted : -22 -15 1 7 20 35 55
+
+Note about Insertion sort:
+1. It is an in-place algorithm : It does not use any extra memory
+2. It is difficult to nail down the time complexity because it will depend on the
+   gap. Worst case O(n^2), but it can perform much better than that
+3. It does not require much as insertion sort so it usually perform better
+4. Unstable algorithm
+
+NOTE: You can also improve bubble sort with shell sort and the same kind of idea is applied
+
