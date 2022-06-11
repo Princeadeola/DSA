@@ -1,0 +1,43 @@
+The binary search algorithm is like a guess the number game which checks if your guess is greater
+or less than the answer and if it is greater than the answer then it tells you to guess lower
+
+Binary search is the process of searching through an array by first locating the middle index and
+compares the value at that index with the value you are searching for and if the value at that index
+is greater than the value you are looking for then automatically know that the value you are looking
+for is located anywhere between the middle index to the beginning of the array
+
+Let say for example
+Array of num is -22 15 1 7 20 35 55
+Value we are looking for is 1
+
+Then the first search will begin from the middle of the array which is 7 and checks if 7 is
+greater than the value we are looking for which is 1, 7 is greater than 1 so it ignore the right
+side of the array which is 20, 35, 55 because it knows that if 7 is greater than the number, that
+means all numbers greater than 7 is also greater than the number we are looking for which is 1,
+so our array is now shortened to -22 15 1, it then divides the number also into 2 to check if
+the right of the array is greater or not, we then have our middle number to be -15 and since -15 is
+less than the number we are looking for then, we divide it again ignoring -22 and -15, but it can not
+be divided again since the only number remaining is 1, so automatically know that the number we are
+looking for is the remaining one.
+
+STEP 1 Search example
+Search value = 1
+
+start = 0
+end = 7 note: end is always the total array size plus 1 because we have to search through all
+midpoint = (start + end) / 2 = 3
+array at index 3 = 7 -> and 7 is greater than 1, so we will look at the left half of the array
+
+
+NOTE:
+1. Data must be sorted
+2. Chooses the element in the middle of the array and compares it against the search value
+3. If the element at the middle is equals to the value then we are done
+4. If the element is greater than the value, search the left half of the array
+5. If the element is less than the value , search the right half of the array
+
+6. At some point, there will be only one element in the partition you are checking,
+   but it doesn't have to get to that point.
+7. Can be implemented recursively
+8. O(logn) -> because it keeps diving the array in half
+
