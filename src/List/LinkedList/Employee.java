@@ -2,12 +2,12 @@ package List.LinkedList;
 
 import java.util.Objects;
 
-public class EmployeeEx1 {
+public class Employee {
     private String firstName;
     private String lastName;
     private int id;
 
-    public EmployeeEx1(String firstName, String lastName, int id) {
+    public Employee(String firstName, String lastName, int id) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.id = id;
@@ -41,7 +41,7 @@ public class EmployeeEx1 {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        EmployeeEx1 that = (EmployeeEx1) o;
+        Employee that = (Employee) o;
         return id == that.id && firstName.equals(that.firstName) && lastName.equals(that.lastName);
     }
 
