@@ -26,9 +26,11 @@ public class Example1 {
         employeeList.add(3, new EmployeeEx1("Micheal", "Kevin", 5346));
 //        employeeList.forEach(employee -> System.out.println(employee));
 
-        EmployeeEx1[] employeeArray = employeeList.toArray(new EmployeeEx1[employeeList.size()]);
-        for (EmployeeEx1 employee: employeeArray) {
-            System.out.println(employee);
-        }
+//        EmployeeEx1[] employeeArray = employeeList.toArray(new EmployeeEx1[employeeList.size()]);
+//        for (EmployeeEx1 employee: employeeArray) {
+//            System.out.println(employee);
+//        }
+
+        System.out.println(employeeList.contains(new EmployeeEx1("John","Doe",113)));
     }
 }
