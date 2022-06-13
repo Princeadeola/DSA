@@ -1,4 +1,4 @@
-package List.ArrList;
+package List.LinkedList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,5 +32,13 @@ public class Example1 {
 //        }
 
         System.out.println(employeeList.contains(new EmployeeEx1("John","Doe",113)));
+
+        System.out.println(employeeList.indexOf(new EmployeeEx1("Micheal","Kevin",5346)));
+
+        System.out.println("Before removing the element");
+        employeeList.forEach(employee -> System.out.println(employee));
+        employeeList.remove(4);
+        System.out.println("After removing the element");
+        employeeList.forEach(employee -> System.out.println(employee));
     }
 }
