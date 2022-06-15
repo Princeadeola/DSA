@@ -1,4 +1,4 @@
-package List.LinkedList;
+package List.LinkedList.DoublyLinkedList;
 
 public class Example1 {
     public static void main(String[] args) {
@@ -9,13 +9,21 @@ public class Example1 {
         Employee jackDoe = new Employee("Jack", "Doe", 3421);
 
         EmployeeLinkedList list = new EmployeeLinkedList();
+
+        System.out.println("Before adding element, list.isEmpty = " + list.isEmpty());
+
         list.addToFront(johnDoe);
         list.addToFront(jamesSmith);
         list.addToFront(janeDoe);
         list.addToFront(jackDoe);
 
-        System.out.println(list.getSize());
+        System.out.println("After adding element, list.isEmpty = " + list.isEmpty());
 
+        System.out.println(list.getSize());
+        list.printList();
+
+        list.removeFromFront();
+        System.out.println(list.getSize());
         list.printList();
 
     }

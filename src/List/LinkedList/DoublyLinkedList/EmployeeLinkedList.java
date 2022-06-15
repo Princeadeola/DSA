@@ -1,4 +1,4 @@
-package List.LinkedList;
+package List.LinkedList.DoublyLinkedList;
 
 public class EmployeeLinkedList {
 
@@ -12,8 +12,25 @@ public class EmployeeLinkedList {
         size++;
     }
 
+    public EmployeeNode removeFromFront(){
+        if (isEmpty()){
+            return null;
+        }
+
+        EmployeeNode removeNode = head;
+        head = head.getNext();
+        size--;
+        removeNode.setNext(null); // not too necessary because once the head have been moved been replaced by a new head
+        return removeNode;
+
+    }
+
     public int getSize(){
         return size;
+    }
+
+    public boolean isEmpty(){
+        return head == null;
     }
 
     public void printList(){

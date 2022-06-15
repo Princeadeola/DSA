@@ -1,4 +1,4 @@
-package List.LinkedList;
+package List.LinkedList.SinglyLinkedList;
 
 public class EmployeeNode {
     private Employee employee;
