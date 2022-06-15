@@ -8,14 +8,20 @@ public class Main {
         Employee janeDoe = new Employee("Jane", "Doe", 4563);
         Employee jackDoe = new Employee("Jack", "Doe", 3421);
 
-       EmployeeDoublyLinkedList list = new EmployeeDoublyLinkedList();
-       list.addToFront(johnDoe);
-       list.addToFront(jamesSmith);
-       list.addToFront(janeDoe);
-       list.addToFront(jackDoe);
+        EmployeeDoublyLinkedList list = new EmployeeDoublyLinkedList();
+        list.addToFront(johnDoe);
+        list.addToFront(jamesSmith);
+        list.addToFront(janeDoe);
+        list.addToFront(jackDoe);
 
-       list.printList();
+//        list.printList();
+//        System.out.println(list.getSize());
+
+        Employee billEnd = new Employee("Bill","End", 234);
+        list.addToEnd(billEnd);
+        list.printList();
         System.out.println(list.getSize());
+
 
     }
 }
