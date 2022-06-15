@@ -1,14 +1,35 @@
 package List.LinkedList.DoublyLinkedList;
 
-public class EmployeeLinkedList {
+public class EmployeeDoublyLinkedList {
 
     private EmployeeNode head;
+    private EmployeeNode tail;
     private int size;
 
     public void addToFront(Employee employee){
         EmployeeNode node = new EmployeeNode(employee);
         node.setNext(head);
+
+        if (head == null){
+            tail = node;
+        }else{
+            head.setPrevious(node);
+        }
         head = node;
+        size++;
+    }
+
+    public void addToEnd(Employee employee){
+        EmployeeNode node = new EmployeeNode(employee);
+        if (tail == null){
+            head = node;
+        }
+        else {
+            tail.setNext(node);
+            node.setPrevious(tail);
+        }
+
+        tail = node;
         size++;
     }
 
@@ -38,7 +59,7 @@ public class EmployeeLinkedList {
         System.out.print("Head -> ");
         while (current != null){
             System.out.print(current);
-            System.out.print(" -> ");
+            System.out.print(" <--> ");
             current = current.getNext();
         }
         System.out.println("null");

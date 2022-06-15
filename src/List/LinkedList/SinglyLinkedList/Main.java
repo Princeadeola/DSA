@@ -1,6 +1,6 @@
-package List.LinkedList.DoublyLinkedList;
+package List.LinkedList.SinglyLinkedList;
 
-public class Example1 {
+public class Main {
     public static void main(String[] args) {
 
         Employee johnDoe = new Employee("John", "Doe", 113);
