@@ -39,6 +39,14 @@ public class EmployeeDoublyLinkedList {
         }
 
         EmployeeNode removeNode = head;
+
+        if (head.getNext() == null){
+            tail = null;
+        }
+        else {
+            head.getNext().setPrevious(null);
+        }
+
         head = head.getNext();
         size--;
         removeNode.setNext(null); // not too necessary because once the head have been moved been replaced by a new head

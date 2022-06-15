@@ -14,11 +14,17 @@ public class Main {
         list.addToFront(janeDoe);
         list.addToFront(jackDoe);
 
-//        list.printList();
-//        System.out.println(list.getSize());
+        list.printList();
+        System.out.println(list.getSize());
 
         Employee billEnd = new Employee("Bill","End", 234);
         list.addToEnd(billEnd);
+
+        list.printList();
+        System.out.println(list.getSize());
+
+        list.removeFromFront();
+
         list.printList();
         System.out.println(list.getSize());
 
