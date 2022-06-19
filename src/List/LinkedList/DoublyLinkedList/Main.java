@@ -28,6 +28,11 @@ public class Main {
         list.printList();
         System.out.println(list.getSize());
 
+        list.removeFromEnd();
+
+        list.printList();
+        System.out.println(list.getSize());
+
 
     }
 }

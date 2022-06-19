@@ -53,6 +53,26 @@ public class EmployeeDoublyLinkedList {
         return removeNode;
 
     }
+    public EmployeeNode removeFromEnd(){
+        if (isEmpty()){
+            return null;
+        }
+
+        EmployeeNode removeNode = head;
+
+        if (tail.getPrevious() == null){
+            head = null;
+        }
+        else {
+            tail.getPrevious().setNext(null);
+        }
+
+        tail = tail.getPrevious();
+        size--;
+        removeNode.setPrevious(null); // not too necessary because once the head have been moved been replaced by a new head
+        return removeNode;
+
+    }
 
     public int getSize(){
         return size;
