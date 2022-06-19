@@ -20,6 +20,23 @@ public class EmployeeDoublyLinkedList {
         head = node;
         size++;
     }
+    public boolean addBefore(Employee newEmployee, Employee existingEmployee) {
+        EmployeeNode newNode = new EmployeeNode(newEmployee);
+        EmployeeNode node = new EmployeeNode(existingEmployee);
+        if (head == null){
+            tail = newNode;
+        }else {
+
+        }
+
+        // return true if you were able to successfully add the employee
+        // into the list before the existing employee. Return false
+        // if the existing employee doesn't exist in the list
+
+        // add your code here
+
+        return false;
+    }
 
     public void addToEnd(Employee employee) {
         EmployeeNode node = new EmployeeNode(employee);
@@ -35,16 +52,7 @@ public class EmployeeDoublyLinkedList {
         size++;
     }
 
-    public boolean addBefore(Employee newEmployee, Employee existingEmployee) {
 
-        // return true if you were able to successfully add the employee
-        // into the list before the existing employee. Return false
-        // if the existing employee doesn't exist in the list
-
-        // add your code here
-
-        return false;
-    }
 
     public EmployeeNode removeFromFront() {
         if (isEmpty()) {
