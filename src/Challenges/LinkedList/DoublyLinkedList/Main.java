@@ -1,4 +1,4 @@
-package Challenges.LinkedList;
+package Challenges.LinkedList.DoublyLinkedList;
 
 public class Main {
 
