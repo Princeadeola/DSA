@@ -39,10 +39,21 @@ public class EmployeeDoublyLinkedList {
             return false;
         }
 
+        EmployeeNode newNode = new EmployeeNode(newEmployee);
+        newNode.setPrevious(current.getPrevious());
+        newNode.setNext(current);
+        current.setPrevious(newNode);
 
+        if (head == current){
+            head = newNode;
+        }
+        else {
+            newNode.getPrevious().setNext(newNode);
+        }
 
+        size++;
 
-        return false;
+        return true;
     }
 
     public void addToEnd(Employee employee) {
