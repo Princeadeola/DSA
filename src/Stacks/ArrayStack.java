@@ -44,7 +44,7 @@ public class ArrayStack {
     }
 
     public void printStack(){
-        for (int i = top - 1; i >= 0 ; i++) {
+        for (int i = top - 1; i >= 0 ; i--) {
             System.out.println(stack[i]);
         }
     }
