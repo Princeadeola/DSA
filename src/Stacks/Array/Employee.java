@@ -1,4 +1,4 @@
-package Stacks;
+package Stacks.Array;
 
 import java.util.Objects;
 

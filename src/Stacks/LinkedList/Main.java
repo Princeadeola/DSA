@@ -1,6 +1,6 @@
 package Stacks.LinkedList;
 
-import Stacks.ArrayStack;
+import Stacks.Array.ArrayStack;
 
 public class Main {
     public static void main(String[] args) {

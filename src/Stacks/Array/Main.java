@@ -1,4 +1,4 @@
-package Stacks;
+package Stacks.Array;
 
 public class Main {
     public static void main(String[] args) {
