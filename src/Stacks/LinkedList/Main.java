@@ -1,25 +1,17 @@
 package Stacks.LinkedList;
 
+import List.LinkedList.SinglyLinkedList.Employee;
 import Stacks.Array.ArrayStack;
 
 public class Main {
     public static void main(String[] args) {
 
-        ArrayStack stack = new ArrayStack(10);
+       Employee johnDoe = new Employee("John", "Doe", 113);
+       Employee jamesSmith = new Employee("James", "Smith", 233);
+       Employee janeDoe = new Employee("Jane", "Doe", 4563);
+       Employee jackDoe = new Employee("Jack", "Doe", 3421);
 
-        stack.push(new Employee("Jane", "Jones", 123));
-        stack.push(new Employee("John", "Doe", 123));
-        stack.push(new Employee("Mary", "Smith", 123));
-        stack.push(new Employee("Mike", "Wilson", 123));
-        stack.push(new Employee("Bill", "End", 123));
 
-        // stack.printStack();
-
-        System.out.println("Peeked: " + stack.peek());
-
-        System.out.println("Removed: " + stack.pop());
-
-        System.out.println("Peeked: " + stack.peek());
 
 
 
