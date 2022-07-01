@@ -1,8 +1,5 @@
 package Stacks.LinkedList;
 
-import List.LinkedList.SinglyLinkedList.Employee;
-import Stacks.Array.ArrayStack;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -10,10 +7,6 @@ public class Main {
        Employee jamesSmith = new Employee("James", "Smith", 233);
        Employee janeDoe = new Employee("Jane", "Doe", 4563);
        Employee jackDoe = new Employee("Jack", "Doe", 3421);
-
-
-
-
 
     }
 }
