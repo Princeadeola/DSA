@@ -11,7 +11,7 @@ public class Main {
         System.out.println(checkForPalindrome("Was it a car or a cat I saw?"));
         // should return true
         System.out.println(checkForPalindrome("I did, did I?"));
-
+        // should return false
         System.out.println(checkForPalindrome("hello"));
         // should return true
         System.out.println(checkForPalindrome("Don't nod"));
