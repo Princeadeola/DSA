@@ -1,0 +1,15 @@
+A stable sort algorithm preserves the relative ordering of duplicate
+elements
+
+STABLE SORT
+Unsorted : 5, 9 , 3, 9, 8, 4
+Sorted: 3, 4, 5, 8, 9, 9   =>(first appeared 9 in unsorted will also appear first when sorted
+                              before the other will appear, which means the order of appearance
+                              of duplicate elements remains the same example bubble sort
+                              because we can only swap position of bubble sort when the first
+                              element is greater than the next and if there are the same then
+                              we don't swap)
+
+AND
+
+Unstable sort algorithm is the opposite of the stable sort

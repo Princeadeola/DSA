@@ -1,0 +1,50 @@
+Merge sort algorithm is a concept of breaking and arranging the array back
+
+Merge sort carries out the following
+1. Divide and conquer algorithm
+2. recursive algorithm
+3. Two phases: Splitting and merging
+4. Splitting phase leads to faster sorting during the merging phase
+5. Splitting phase is logical, we don't create new array
+
+Let see the splitting phase
+1. Starts with an unsorted array
+2. Divide the array into two arrays, which are both unsorted. The first
+   array is the left array and the second array is the right array
+3. split the left and right arrays into two arrays each
+4. Keep splitting until all arrays have only one element each - these arrays are sorted
+
+
+Let also see the merging phase
+1. Merge every left/right pair of sibling arrays into a sorted array
+2. After the first merge, we will have a bunch of 2 element sorted arrays
+3. Then merge those sorted arrays (left/right sibling) to end up with a bunch of 4 element sorted array
+4. Repeat until you have a singe sorted array
+5. Not in place. Uses temporary arrays
+
+Example: 20 35 -15 7 55 1 -22
+Using merge array
+
+start = 0
+end = 7 (array.length)
+midpoint = (start + end) / 2 = 3
+a) You will first split it into two => 20 35 -15 | 7 55 1 -22
+   Element 0 to 2 will go into the left array, and element 3 to 6 will go into the right array
+
+b) Then the process is repeated until all splitted array are also splitted
+   You will get 20 | 35 | -15 | 7 | 55 | 1 | -22 (all splitting done)
+
+c) After splitting all arrays, then in the merging phase, we first merge the first last array
+   splitted array which will be at the left 35 | -15
+
+   The merging phase goes this way
+   1. We merge the sibling left and right arrays
+   2. We create a temporary array large enough to hold all the element in the array that we are merging
+   3. We set i to the first index of the left array and j to the first index of the right array
+   4. We compare left[i] to right[j], if left is smaller then we copy it to the temp array and increment
+      i by 1. if right is smaller then we copy it the to the right array and increase j by 1.
+   5. We repeat this process until all elements in the two arrays have been processed
+   6. At this point, the temp array contains the merged values in sorted order
+   7. We then copy the temp array back to the original input array at the correct positions
+   8 If the left array is at positions x to y, then the right array is at position y + 1 to z, then
+     after copy, positions x to z will be sorted in the original array
