@@ -3,7 +3,7 @@ package Questions;
 // Java code to implement the above approach
 import java.io.*;
 class Test {
-//
+
     public static void main(String[] args) {
         int n = 14, k = 2;
         System.out.println(Josephus(n, k));
